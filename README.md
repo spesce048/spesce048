@@ -1,44 +1,137 @@
 # Samantha Pesce
 
-**Product leader exploring the intersection of product, AI and building.**
+**Product leader exploring what happens when product people can build, automate and operate with AI.**
 
-I’m a digital product leader with experience across marketplaces, growth and 0→1 products. I’m increasingly interested in how AI-assisted development and agentic workflows let product people move beyond requirements and prototypes into building and operating real products themselves.
+I’m a digital product leader with experience across marketplaces, growth and 0→1 products.
 
-This GitHub is where I document that experimentation: practical automations, product prototypes, workflow experiments and things I’m learning by building.
+More recently, I’ve been spending a lot of time building.
 
-## Current projects
+Not because I’m trying to become a software engineer, but because AI-assisted development is changing how much distance there needs to be between identifying a problem and creating something that solves it.
+
+This GitHub is where I document that exploration: automations, agents, prototypes and experiments with connected AI tools.
+
+## What I’ve been building
 
 ### 🏋️ Automated Gym Class Booker
 
-A production automation built with TypeScript, Playwright, GitHub Actions and AI-assisted development.
+A working automation built around a very real problem: the classes I want often open for booking while I’m commuting and unable to grab them manually.
 
-It authenticates with a live booking platform, identifies configured classes, acts at booking release time, books or joins a waitlist when appropriate, verifies the outcome and sends notifications.
+Built with **TypeScript, Playwright and GitHub Actions**, it:
 
-The project has been a hands-on exercise in turning a simple user problem into a working production system: defining states and failure modes, handling authentication, building deterministic matching logic, testing safely, debugging real production failures and improving scheduling reliability.
+* authenticates with a live booking platform
+* identifies configured classes and release times
+* books automatically when places become available
+* joins waitlists when appropriate
+* handles states such as classes not yet being released
+* verifies the resulting booking state
+* runs on a schedule without requiring me to be there
 
-*Source repository currently kept private while the automation is in active use.*
+What started as a small automation became an exercise in production thinking: authentication, state handling, failure modes, scheduling, retries, safe testing and debugging behaviour against a live system.
 
-### 🎵 Festival → Spotify automation
+*The source repository is currently private while the automation is in active use.*
 
-An experiment in using connected AI tools to turn festival line-ups and artist setlists into usable Spotify playlists with minimal manual work.
+### 🚆 Rail Delay Repay Tracker
 
-The interesting part for me was less the playlist itself and more the shift from a traditional chat interaction to an AI workflow that can research, structure information and take actions in another product.
+An ongoing experiment in turning a recurring bit of personal admin into a data workflow.
 
-## What I’m exploring
+The goal is to combine my planned journeys with actual train running data, identify journeys that may qualify for Delay Repay and maintain a record of potential claims.
 
-- AI-assisted product development
-- Agentic workflows and automation
-- Marketplace and growth products
-- 0→1 product development
-- Moving from prototype thinking to working software
-- How product people can use AI to shorten the distance between idea and execution
+The interesting problem here isn’t simply scraping a timetable. It’s designing something that can cope with real behaviour: changing travel days, one-off journeys, different train choices and imperfect transport data.
+
+I’m exploring how much of the process can move from **“remember to check this”** to **“surface the exception that needs my attention.”**
+
+### 🎙️ AI Meeting Note Taker
+
+Currently exploring a local meeting assistant using **Codex**.
+
+The aim is for it to:
+
+* listen to meetings
+* create transcripts
+* distinguish contributors
+* learn recurring terminology
+* generate useful post-meeting summaries
+* save those outputs into a local workspace automatically
+
+I’m particularly interested in how a relatively simple agent can accumulate enough context about a team and its vocabulary to become genuinely useful rather than producing generic meeting notes.
+
+### 🎵 Festival → Spotify workflow
+
+An experiment using connected AI tools to turn festival line-ups and artist setlists into usable Spotify playlists.
+
+The playlist itself wasn’t really the point.
+
+What interested me was moving beyond:
+
+**human asks AI → AI returns text**
+
+towards:
+
+**human defines intent → AI researches → structures information → interacts with another product → produces the outcome**
+
+That distinction is increasingly central to what I’m exploring.
+
+### 🤖 Connected AI workflows
+
+I’ve also been experimenting with AI systems that can work across tools rather than treating the chat window as the end product.
+
+That includes workflows involving things like:
+
+* Spotify
+* GitHub
+* Google Calendar
+* Google Sheets
+* Notion
+* local files and applications
+* browser automation
+* scheduled tasks
+
+I’m interested in where these systems are reliable enough to take actions autonomously, where human approval still belongs in the loop, and how you design the boundary between the two.
+
+## What I’m exploring now
+
+**Agentic product experiences**
+What changes when software can reason about intent and take actions rather than simply exposing features?
+
+**AI-assisted product development**
+Using tools such as ChatGPT, Claude and Codex to move from an idea to working software much faster.
+
+**Personal automation**
+Small, highly specific systems that remove recurring admin or solve problems traditional software would never economically address.
+
+**Human-in-the-loop systems**
+Understanding which decisions should be automated and which should be surfaced back to a person.
+
+**Context and memory**
+How agents become more useful when they understand terminology, preferences, previous decisions and ongoing work.
+
+**Product people who build**
+How the role of a PM changes when prototyping can increasingly mean building the real thing.
+
+## The bigger question
+
+The part I find most interesting isn’t whether AI can write code.
+
+It’s what happens to product development when the cost of turning an idea into functioning software collapses.
+
+A product person can increasingly identify a problem, interrogate it, design the behaviour, build an implementation, test it against the real world and iterate without handing every stage to a different discipline.
+
+That doesn’t remove the need for engineering or design.
+
+But it does change what an individual product person can explore before needing them.
+
+That’s the shift I’m trying to understand by building things rather than just reading about it.
 
 ## About me
 
-I’m a product leader based in the UK. My background spans marketplace, growth and digital product roles, including building products for both consumer and commercial users.
+I’m a UK-based product leader working across digital products, marketplaces, growth and 0→1 development.
 
-I’m not trying to become a software engineer. I’m learning to build because I think the boundary between product thinking and implementation is changing, and I want to understand that shift by doing the work myself.
+My professional work is primarily product leadership rather than software engineering, so most of what appears here is deliberately experimental.
+
+Some projects will become polished. Some will probably remain slightly ridiculous automations solving problems that affect approximately one person.
+
+Both are useful.
 
 ---
 
-*This profile is a work in progress. More projects and case studies coming as I build them.*
+*Currently learning by building, breaking things, debugging them and occasionally discovering I’ve accidentally created infrastructure for a problem that could have been solved with a reminder.*
